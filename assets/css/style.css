@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* Make the textarea and output occupy two columns on the entire screen. */
+
+body {
+    margin: 0 auto;
+}
+
+#input-container, #output-container {
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    float: left;
+}
+
+/* Give both input and output a gap separating them from their containers */
+
+#input, #output {
+    display: block; /* <textarea> needs this */
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+}
+
+#input {
+    height: 100%;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, monospace;
+}
+
+/* Input textarea style */
+
+#input-container {
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* Output style */
+
+a:link, a:visited, a:hover, a:active {
+    color: #4183C4;
+    text-decoration: none;
+}
+
+#output-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+code {
+    font-size: 90%;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, monospace;
+}
+
+pre {
+    padding: 5px;
+    background-color: #F8F8F8;
+    border: 1px solid #CCC;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+pre code {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    font-style: italic;
+    width: 80%;
+}
