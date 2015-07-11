@@ -27,6 +27,7 @@ body {
 #input {
     height: 100%;
     font-family: Consolas, Menlo, Monaco, Lucida Console, monospace;
+    resize: none;
 }
 
 /* Input textarea style */
@@ -34,6 +35,7 @@ body {
 #input-container {
     border-right: 1px solid black;
     box-sizing: border-box;
+    padding: 25px;
 }
 
 /* Output style */
