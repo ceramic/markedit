@@ -7,10 +7,10 @@
   :description "marked tests.")
 (in-suite tests)
 
-(test simple-test
-  (is
-   (equal 1 1))
-  (is-true
-   (and t t)))
+(test requests
+  (finishes
+   (marked:start-app))
+  (finishes
+   (lucerne:stop marked:app)))
 
 (run! 'tests)
