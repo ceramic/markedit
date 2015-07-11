@@ -6,7 +6,10 @@
   :homepage "https://github.com/ceramic/marked"
   :bug-tracker "https://github.com/ceramic/marked/issues"
   :source-control (:git "git@github.com:ceramic/marked.git")
-  :depends-on (:3bmd)
+  :depends-on (:ceramic
+               :lucerne
+               :3bmd
+               :3bmd-ext-code-blocks)
   :components ((:module "assets"
                 :components
                 ((:module "css"
