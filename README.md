@@ -1,5 +1,7 @@
 # MarkEdit
 
+![Screenshot](https://raw.githubusercontent.com/ceramic/markedit/master/markedit.png)
+
 A Markdown editor example with Ceramic.
 
 # License
