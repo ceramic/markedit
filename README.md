@@ -1,4 +1,4 @@
-# Marked
+# MarkEdit
 
 A Markdown editor example with Ceramic.
 

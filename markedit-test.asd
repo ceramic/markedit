@@ -1,10 +1,10 @@
-(defsystem marked-test
+(defsystem markedit-test
   :author "Fernando Borretti <eudoxiahp@gmail.com>"
   :license "MIT"
-  :description "Tests for marked."
-  :depends-on (:marked
+  :description "Tests for MarkEdit."
+  :depends-on (:markedit
                :fiveam)
   :components ((:module "t"
                 :serial t
                 :components
-                ((:file "marked")))))
+                ((:file "markedit")))))

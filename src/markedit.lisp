@@ -1,18 +1,18 @@
 (in-package :cl-user)
-(defpackage marked
+(defpackage markedit
   (:use :cl :lucerne)
   (:import-from :ceramic.resource
                 :define-resources
                 :resource-directory)
   (:export :app
            :start-app)
-  (:documentation "Main marked code."))
-(in-package :marked)
+  (:documentation "Main MarkEdit code."))
+(in-package :markedit)
 (annot:enable-annot-syntax)
 
 ;;; App resources
 
-(define-resources :marked ()
+(define-resources :markedit ()
   (assets #p"assets/")
   (templates #p"templates/"))
 
@@ -57,7 +57,7 @@
 (defun start-app ()
   (start app :port *port*))
 
-(ceramic:define-entry-point :marked ()
+(ceramic:define-entry-point :markedit ()
   (let ((window (ceramic:make-window :url (format nil "http://localhost:~D/" *port*))))
     (ceramic:show-window window)
     (start-app)))
