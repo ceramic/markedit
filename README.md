@@ -4,6 +4,16 @@
 
 A Markdown editor example with Ceramic.
 
+## Building
+
+Run:
+
+```lisp
+(ql:quickload :ceramic)
+
+(ceramic.bundler:bundle :markedit)
+```
+
 # License
 
 Copyright (c) 2015 Fernando Borretti
