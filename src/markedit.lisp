@@ -4,8 +4,7 @@
   (:import-from :ceramic.resource
                 :define-resources
                 :resource-directory)
-  (:export :app
-           :start-app)
+  (:export :app)
   (:documentation "Main MarkEdit code."))
 (in-package :markedit)
 (annot:enable-annot-syntax)
@@ -52,12 +51,9 @@
 
 ;;; Startup
 
-(defvar *port* 40000)
-
-(defun start-app ()
-  (start app :port *port*))
+(defparameter *port* 9000)
 
 (ceramic:define-entry-point :markedit ()
+  (start app :port *port*)
   (let ((window (ceramic:make-window :url (format nil "http://localhost:~D/" *port*))))
-    (ceramic:show-window window)
-    (start-app)))
+    (ceramic:show window)))

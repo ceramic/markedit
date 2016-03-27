@@ -9,7 +9,8 @@
   :depends-on (:ceramic
                :lucerne
                :3bmd
-               :3bmd-ext-code-blocks)
+               :3bmd-ext-code-blocks
+               :find-port)
   :components ((:module "assets"
                 :components
                 ((:module "css"
